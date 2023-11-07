@@ -27,11 +27,11 @@ a {
     color: #BEBEBE;
 }
 
-li {
+.navigation-ul li {
     color: #ADF0DD;
 }
 
-li:hover{
+.navigation-ul li:hover{
     border-bottom: 1px solid black;
 
 }

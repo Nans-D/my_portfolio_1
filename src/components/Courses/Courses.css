@@ -16,16 +16,14 @@
 
 .courses-card-container{
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-around;
     color: white;
-    
 }
 
 .card-container{
         padding: 20px;
         border-radius: 10px;
-        background:linear-gradient(180deg, #0BD8B6, #007AA6);
+        background: linear-gradient(90deg, #0D2D2A, #0D1514);
         border: 2px solid transparent;
         background-clip: padding-box;
         width: 25%;

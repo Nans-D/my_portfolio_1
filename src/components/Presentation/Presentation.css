@@ -40,7 +40,7 @@
 .description-container{
   opacity: 0;
     font-size: 30px;
-    color: #ADF0DD;
+    color: white;
     margin: 10px 0 30px 0;
     animation-name: fade-top;
     animation-delay: 0.50s;
@@ -66,13 +66,14 @@
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 10px;
-}
-
-
-.btn-link:hover {
     color: white;
-    background-image: linear-gradient(90deg, lightgreen, #0D432F);
-    border-color: transparent; /* Rendez le bord transparent au lieu de le supprimer */
+  }
+  
+  
+  .btn-link:hover {
+    color: white;
+    background: linear-gradient(90deg, #0D2D2A, #0D1514);
+    border-radius: 10px;
 }
 
 
@@ -114,9 +115,10 @@
   }
   
   .popup-content {
-    background-color: #fff;
+    background: linear-gradient(180deg, #0D2D2A, #0D1514);
     padding: 20px;
     border-radius: 5px;
+    color: white;
   }
 
   .popup-description-container{

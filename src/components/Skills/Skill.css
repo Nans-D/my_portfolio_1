@@ -1,10 +1,8 @@
 .skills-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: white;
-    height: 54rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10em;
 }
 #skill-title{
     background-image: linear-gradient(45deg, #0BD8B6, #007AA6);
@@ -12,92 +10,60 @@
     -webkit-text-fill-color: transparent;
     font-size: 50px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.language-container-child{
-    margin: 10px 0;
-    justify-content: center;
-    position: relative;
+.front-end-container{
 }
 
-.front-end-text{
+.skills-title{
+    text-align: center;
+    padding: 20px;
+    color: #ADF0DD;
+    font-weight: bold;
+}
+.icons-container{
     display: flex;
-    padding: 10px 0;
-    color: white;
-    position: absolute;
-    position: absolute;
-    top: 10%;
-    left: 45%;
+    flex-direction: column;
+    gap: 1em;
+    padding-right: 10px;
 }
 
-.back-end-text{
+.text-icons-container{
     display: flex;
-    padding: 10px 0;
-    color: white;
-    position: absolute;
-    position: absolute;
-    top: 10%;
-    left: 40%;
-}
-
-.soft-skills-text{
-    display: flex;
-    padding: 10px 0;
-    color: white;
-    position: absolute;
-    position: absolute;
-    top: 10%;
-    left: 45%;
-}
-
-.icon-container{
-    display: flex;
+    flex-direction: column;
+    gap: 1em
+    /* display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 100px 100px 40px 100px;
-    border-radius: 30px;
-    background:linear-gradient(180deg, #0BD8B6, #007AA6);
+    padding: 20px;
+    border-radius: 30px; */
+    /* background:linear-gradient(180deg, #0BD8B6, #007AA6); */
 
 }
 
 .cards-container{
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(14, 11, 11, 0.3);
+    border-radius: 5px;
+    background: linear-gradient(180deg, #0D2D2A, #0D1514);
     box-shadow: 0 0 10px #141010;
-    border: 2px solid transparent;
+    border: 2px solid #145750;
     background-clip: padding-box;
-    width: 8rem;
+    width:8rem;
+    height: 10em;
+    display: flex;
+    align-items: center;
 }
 
-
-
-
-.back-end-softskills-container{
+.html-container, .css-container, .js-container{
     display: flex;
-    width: auto;
-    gap: 10px;
 }
 
 .p-html, .p-css, .p-js{
-    padding-top: 10px;
 } 
 
 .fa-html5, .fa-css3-alt, .fa-js, .fa-node-js, .fa-magnifying-glass, .fa-book, .fa-calendar-xmark{
-    font-size: 100px;
-}
-
-
-.fa-html5:hover{
-    color: #E54B20;
-}
-
-.fa-css3-alt:hover{
-    color: #0F73B5;
-}
-
-.fa-js:hover{
-    color: #E4A229;
+    font-size: 20px;
+    
 }
 
 
