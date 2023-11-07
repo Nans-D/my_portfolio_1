@@ -1,0 +1,168 @@
+.test{
+    display: flex;
+    margin: 0 0 20px 0;
+    justify-content: center;
+}
+
+.presentation-container{
+    display: flex;
+    height: 48rem;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    
+}
+
+.gradient-color-text{
+    background-image: linear-gradient(45deg, #0BD8B6, #007AA6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hi-container{
+    font-size: 30px;
+    animation-name: fade-top;
+    animation-duration: 0.25s;
+}
+
+.my-name-container{
+    opacity: 0;
+    font-size: 80px;
+    margin: 0 0 20px 0;
+    animation-name: fade-top;
+    animation-delay: 0.25s;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards
+
+}
+
+.description-container{
+  opacity: 0;
+    font-size: 30px;
+    color: #ADF0DD;
+    margin: 10px 0 30px 0;
+    animation-name: fade-top;
+    animation-delay: 0.50s;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards
+}
+
+
+.a-container{
+  opacity: 0;
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+    animation-name: fade-top;
+    animation-delay: 0.75s;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards
+}
+
+
+.btn-link{
+    border: 1px solid #207E73;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+.btn-link:hover {
+    color: white;
+    background-image: linear-gradient(90deg, lightgreen, #0D432F);
+    border-color: transparent; /* Rendez le bord transparent au lieu de le supprimer */
+}
+
+
+.btn-link .fa-github, .fa-linkedin, .fa-download{
+    margin-right: 5px; 
+}
+
+
+.gras-text{
+    font-weight: bold;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-imgg {
+    border-radius: 50%;
+    width: 80%;
+}
+#logo-imgg:hover {
+    border-radius: 50%;
+    width: 80%;
+    box-shadow: 10px 10px 100px lightgreen;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 11, 11, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .popup-description-container{
+    display: flex;
+  }
+
+  #popup-description-p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #popup-description-p p{
+    padding: 5px;
+  }
+
+    #popup-logo-imgg{
+        border-radius: 50%;
+        width: 200px;
+        padding: 2rem;
+    }
+
+  .popup-logo-container{
+    display: flex;
+  }
+
+  .popup-download-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-download-btn button{
+    margin: 10px;
+    padding: 2px 20px;
+  }
+
+  @keyframes fade-top {
+    from{
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

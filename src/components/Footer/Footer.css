@@ -1,0 +1,12 @@
+.body-container-test{
+    width: 100%;
+}
+
+.body-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 24rem;
+    color: #ADF0DD;
+}

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'typeface-quicksand'
+import Header from './components/Header/Header';
+import Presentation from './components/Presentation/Presentation'
+import Skill from './components/Skills/Skill';
+import Projects from './components/Projects-folder/Projects';
+import { Footer } from './components/Footer/Footer';
+import { Experience } from './components/Experience/Experience';
+import { Courses } from './components/Courses/Courses';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className='container'>
+    <body className='body-container'>
+
+    <div style={{  maxWidth : '72rem'}}>
+      <Header></Header>
+      <Presentation></Presentation>
+      <div id='skill'>
+      <Skill></Skill>
+
+      </div>
+      <div id='projects'>
+      <Projects></Projects>
+      <Experience></Experience>
+      <Courses></Courses>
+      </div>
     </div>
+    <Footer></Footer>
+    </body>
+  </div>
   );
 }
 

@@ -1,0 +1,32 @@
+.courses-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 24rem;
+}
+
+#courses-title{
+    font-size: 50px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(45deg, #0BD8B6, #007AA6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.courses-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    
+}
+
+.card-container{
+        padding: 20px;
+        border-radius: 10px;
+        background:linear-gradient(180deg, #0BD8B6, #007AA6);
+        border: 2px solid transparent;
+        background-clip: padding-box;
+        width: 25%;
+}
