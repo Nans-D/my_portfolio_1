@@ -1,10 +1,10 @@
 import './Skill.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHtml5, faReact } from "@fortawesome/free-brands-svg-icons"
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons"
 import { faJs } from "@fortawesome/free-brands-svg-icons"
-import { faMagnifyingGlass, faServer } from '@fortawesome/free-solid-svg-icons'
 import { faNodeJs } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5, faReact } from "@fortawesome/free-brands-svg-icons"
+import { faMagnifyingGlass, faServer } from '@fortawesome/free-solid-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { faCalendarXmark } from '@fortawesome/free-solid-svg-icons'
 
@@ -53,7 +53,7 @@ function Skill(){
                         <li className='text-icons-container'>
                             <p className='p-html'>Clever</p>
                             <p className='p-html'>Reader</p>
-                            <p className='p-html'>Schedule</p>
+                            <p className='p-html'>On Time</p>
                         </li>
                     </ul>
                 </div>

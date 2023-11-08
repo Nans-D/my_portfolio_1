@@ -7,6 +7,7 @@ import Projects from './components/Projects-folder/Projects';
 import { Footer } from './components/Footer/Footer';
 import { Experience } from './components/Experience/Experience';
 import { Courses } from './components/Courses/Courses';
+import { Contact } from './components/Contact/Contact';
 import './App.css'
 
 function App() {
