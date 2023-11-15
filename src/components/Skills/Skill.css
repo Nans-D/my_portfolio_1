@@ -1,71 +1,75 @@
-.skills-container{
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 10em;
+.skills-container {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10em;
 }
-#skill-title{
-    background-image: linear-gradient(45deg, #0BD8B6, #007AA6);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.front-end-container{
+#skill-title {
+  background-image: linear-gradient(45deg, #0bd8b6, #007aa6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.skills-title{
-    text-align: center;
-    padding: 20px;
-    color: #ADF0DD;
-    font-weight: bold;
+.skills-title {
+  text-align: center;
+  padding: 20px;
+  color: #adf0dd;
+  font-weight: bold;
 }
-.icons-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding-right: 10px;
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-right: 10px;
 }
 
-.text-icons-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1em
-    /* display: flex;
+.text-icons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* display: flex;
     justify-content: center;
     gap: 50px;
     padding: 20px;
     border-radius: 30px; */
-    /* background:linear-gradient(180deg, #0BD8B6, #007AA6); */
-
+  /* background:linear-gradient(180deg, #0BD8B6, #007AA6); */
 }
 
-.cards-container{
-    border-radius: 5px;
-    background: linear-gradient(180deg, #0D2D2A, #0D1514);
-    box-shadow: 0 0 10px #141010;
-    border: 2px solid #145750;
-    background-clip: padding-box;
-    width:8rem;
-    height: 10em;
+.cards-container {
+  border-radius: 5px;
+  background: linear-gradient(180deg, #0d2d2a, #0d1514);
+  box-shadow: 0 0 10px #141010;
+  border: 2px solid #145750;
+  background-clip: padding-box;
+  width: 8rem;
+  height: 10em;
+  display: flex;
+  align-items: center;
+}
+
+.html-container,
+.css-container,
+.js-container {
+  display: flex;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js,
+.fa-node-js,
+.fa-magnifying-glass,
+.fa-book,
+.fa-calendar-xmark {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .skills-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+  }
 }
-
-.html-container, .css-container, .js-container{
-    display: flex;
-}
-
-.p-html, .p-css, .p-js{
-} 
-
-.fa-html5, .fa-css3-alt, .fa-js, .fa-node-js, .fa-magnifying-glass, .fa-book, .fa-calendar-xmark{
-    font-size: 20px;
-    
-}
-
-
-
-

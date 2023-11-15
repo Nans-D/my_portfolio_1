@@ -1,170 +1,198 @@
-.test{
-    display: flex;
-    margin: 0 0 20px 0;
-    justify-content: center;
+.presentation-container {
+  display: flex;
+  margin: 0 0 20px 0;
+  justify-content: center;
 }
 
-.presentation-container{
-    display: flex;
-    height: 48rem;
-    width: 60%;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    
+.presentation-container-child {
+  display: flex;
+  height: 48rem;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
-.gradient-color-text{
-    background-image: linear-gradient(45deg, #0BD8B6, #007AA6);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.gradient-color-text {
+  background-image: linear-gradient(45deg, #0bd8b6, #007aa6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.hi-container{
-    font-size: 30px;
-    animation-name: fade-top;
-    animation-duration: 0.25s;
+.hi-container {
+  font-size: 30px;
+  animation-name: fade-top;
+  animation-duration: 0.25s;
 }
 
-.my-name-container{
-    opacity: 0;
-    font-size: 80px;
-    margin: 0 0 20px 0;
-    animation-name: fade-top;
-    animation-delay: 0.25s;
-    animation-duration: 0.25s;
-    animation-fill-mode: forwards
-
-}
-
-.description-container{
+.my-name-container {
   opacity: 0;
-    font-size: 30px;
-    color: white;
-    margin: 10px 0 30px 0;
-    animation-name: fade-top;
-    animation-delay: 0.50s;
-    animation-duration: 0.25s;
-    animation-fill-mode: forwards
+  font-size: 80px;
+  margin: 0 0 20px 0;
+  animation-name: fade-top;
+  animation-delay: 0.25s;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
 }
 
-
-.a-container{
+.description-container {
   opacity: 0;
-    padding: 10px 0;
-    display: flex;
-    gap: 10px;
-    animation-name: fade-top;
-    animation-delay: 0.75s;
-    animation-duration: 0.25s;
-    animation-fill-mode: forwards
+  font-size: 30px;
+  color: white;
+  margin: 10px 0 30px 0;
+  animation-name: fade-top;
+  animation-delay: 0.5s;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
 }
 
-
-.btn-link{
-    border: 1px solid #207E73;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: white;
-  }
-  
-  
-  .btn-link:hover {
-    color: white;
-    background: linear-gradient(90deg, #0D2D2A, #0D1514);
-    border-radius: 10px;
+.a-container {
+  opacity: 0;
+  padding: 10px 0;
+  display: flex;
+  gap: 10px;
+  animation-name: fade-top;
+  animation-delay: 0.75s;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
 }
 
-
-.btn-link .fa-github, .fa-linkedin, .fa-download{
-    margin-right: 5px; 
+.btn-link {
+  border: 1px solid #207e73;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
 }
 
-
-.gras-text{
-    font-weight: bold;
+.btn-link:hover {
+  color: white;
+  background: linear-gradient(90deg, #0d2d2a, #0d1514);
+  border-radius: 10px;
 }
 
-.logo-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn-link .fa-github,
+.fa-linkedin,
+.fa-download {
+  margin-right: 5px;
+}
+
+.gras-text {
+  font-weight: bold;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #logo-imgg {
-    border-radius: 50%;
-    width: 80%;
-}
-#logo-imgg:hover {
-    border-radius: 50%;
-    width: 80%;
-    box-shadow: 10px 10px 100px lightgreen;
+  border-radius: 50%;
+  width: 100%;
+  margin: 30px;
+  border: 5px solid #207e73;
+  /* box-shadow: 0px 0px 50px 10px #adf0dd; */
 }
 
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(14, 11, 11, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 11, 11, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: linear-gradient(180deg, #0d2d2a, #0d1514);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.popup-description-container {
+  display: flex;
+}
+
+#popup-description-p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#popup-description-p p {
+  padding: 5px;
+}
+
+#popup-logo-imgg {
+  border-radius: 50%;
+  width: 200px;
+  border: 5px solid #207e73;
+  margin: 20px;
+}
+
+.popup-logo-container {
+  display: flex;
+}
+
+.popup-download-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.popup-download-btn button {
+  margin: 10px;
+  padding: 2px 20px;
+  color: black;
+}
+
+@keyframes fade-top {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .popup-content {
-    background: linear-gradient(180deg, #0D2D2A, #0D1514);
-    padding: 20px;
-    border-radius: 5px;
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .presentation-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .presentation-container-child {
+    display: flex;
+    height: 48rem;
+    justify-content: center;
     color: white;
   }
 
-  .popup-description-container{
-    display: flex;
+  .presentation-container-text h4 {
+    font-size: 1em;
   }
 
-  #popup-description-p{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  #logo-imgg {
+    width: 18em;
   }
 
-  #popup-description-p p{
-    padding: 5px;
-  }
-
-    #popup-logo-imgg{
-        border-radius: 50%;
-        width: 200px;
-        padding: 2rem;
-    }
-
-  .popup-logo-container{
-    display: flex;
-  }
-
-  .popup-download-btn{
+  .a-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 0 7em;
   }
-
-  .popup-download-btn button{
-    margin: 10px;
-    padding: 2px 20px;
-  }
-
-  @keyframes fade-top {
-    from{
-      opacity: 0;
-      transform: translateY(20px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+}

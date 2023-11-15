@@ -1,17 +1,21 @@
 import './Presentation.css'
-import moi from '../../images/rick.jpeg'
+import moi from '../../images/moi.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 
 function Presentation(){
-
+  
+  
     const [showPopup, setShowPopup] = useState(false);
 
-    const handleDownloadCvClick = () => {
+    const handleDownloadCvClick = (e) => {
       setShowPopup(true);
+      e.preventDefault()
+      
     };
   
     const handleClosePopup = () => {
@@ -19,13 +23,15 @@ function Presentation(){
     };
 
     return <div>
-        <div className='test'>
-            <div className='presentation-container'>
+        <div className='presentation-container'>
+            <div className='presentation-container-child'>
+              <div className='presentation-container-text'>
                 <h4 className='hi-container gradient-color-text'>Hey there! I'm</h4>
                 <h1 className='my-name-container gradient-color-text'>Nans Delaubert</h1>
                 <p className='description-container'>I'm a <span className='gras-text'>Front-end Developer</span> based in France, and i'm very passionate about solving problems to help people creating website</p>
+              </div>
                 <div className='a-container'>
-                    <a href="https://github.com/Nans-D" className="btn-link">
+                    <a href="https://github.com/Nans-D" target="blank" className="btn-link">
                     <FontAwesomeIcon icon={faGithub} />GitHub
                     </a>
                     <a href="https://www.linkedin.com/in/nans-delaubert/" className="btn-link">
@@ -54,7 +60,7 @@ function Presentation(){
                 </div>
             </div>
             <div className='popup-download-btn'>
-                <p>Téléchargez mon CV <a href="../../../public/cv_nans_delaubert.pdf" download="">ici</a></p>
+            <a href="../../../public/cv_nans_delaubert.pdf" download="">Téléchargez mon CV <FontAwesomeIcon icon={faFile} /></a>
                 <button className="btn-link" onClick={handleClosePopup}>Fermer</button>
             </div>
           </div>

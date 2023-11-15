@@ -1,61 +1,64 @@
-.courses-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 24rem;
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 24rem;
 }
 
-#courses-title{
-    font-size: 50px;
-    padding-bottom: 30px;
-    background-image: linear-gradient(45deg, #0BD8B6, #007AA6);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
+.courses-title {
+  font-size: 50px;
+  margin: 0 0 10px 0;
+  background-image: linear-gradient(45deg, #0bd8b6, #007aa6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
-.courses-card-container{
-    display: flex;
-    justify-content: space-around;
-    color: white;
+.courses-card-container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
 }
 
-.card-container{
-    color: white;
-    border: 2px solid #145750;
-        padding: 20px;
-        border-radius: 10px;
-        background: linear-gradient(90deg, #0D2D2A, #0D1514);
-        background-clip: padding-box;
-        width: 25%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;        
-    }
-
-.padding-p{
-    padding-bottom: 10px;
+.card-container {
+  color: white;
+  border: 2px solid #145750;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #0d2d2a, #0d1514);
+  background-clip: padding-box;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.languages-container{
-    display: flex;
-    justify-content: center;
-    gap: 0.5em
+.padding-p {
+  padding-bottom: 10px;
 }
 
-.language-container{
-    font-size: 8px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    background-color: #12A594;
-    padding: 5px 10px;
-    align-self: flex-start; 
-    border-radius: 5px;
-    
+.languages-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
 }
 
-.fa-js-icon, .fa-react-icon{
-    font-size: 10px;
-    padding: 0 5px 0 0;
+.language-container {
+  font-size: 8px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: #12a594;
+  padding: 5px 10px;
+  align-self: flex-start;
+  border-radius: 5px;
+}
+
+.fa-js-icon,
+.fa-react-icon {
+  font-size: 10px;
+  padding: 0 5px 0 0;
+}
+
+@media screen and (max-width: 600px) {
 }
