@@ -1,10 +1,8 @@
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import moi from "../../images/moi.jpeg";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { Contact } from "../Contact/Contact";
+import { BrowserRouter as Router } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useRef } from "react";
 
 function Header() {
   // const burgerLogo = document.getElementById("burger-logo");

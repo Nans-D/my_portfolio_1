@@ -1,5 +1,4 @@
 import "./Presentation.css";
-import { ReactDOM } from "react";
 import moi from "../../images/moi.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";

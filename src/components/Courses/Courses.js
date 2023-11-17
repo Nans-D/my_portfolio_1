@@ -1,9 +1,9 @@
 import "./Courses.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss3Alt, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
 import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
-import { faFile, faFileLines } from "@fortawesome/free-solid-svg-icons";
+import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 
 export const Courses = () => {
   return (
