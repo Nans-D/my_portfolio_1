@@ -16,8 +16,15 @@
   display: none;
 }
 
+.burger-logo {
+  display: none;
+}
+
+.burger-links {
+  display: none;
+}
+
 .navigation {
-  display: flex;
   font-size: 20px;
 }
 
@@ -46,5 +53,34 @@ a {
   .container-child {
     display: flex;
     width: 100%;
+  }
+
+  .burger-logo {
+    display: flex;
+    position: absolute;
+    top: 2.3em;
+    right: 1em;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+  }
+
+  .burger-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10em;
+    right: 1em;
+  }
+
+  .navigation-ul {
+    display: none;
+  }
+
+  .burger-navigation-ul {
+    display: none;
+    list-style-type: decimal;
+    color: white;
   }
 }

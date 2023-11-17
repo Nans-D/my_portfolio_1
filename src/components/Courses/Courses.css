@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 24rem;
 }
 
 .courses-title {
@@ -24,10 +23,11 @@
   color: white;
   border: 2px solid #145750;
   padding: 20px;
+  margin: 0 1em;
   border-radius: 10px;
   background: linear-gradient(90deg, #0d2d2a, #0d1514);
   background-clip: padding-box;
-  width: 25%;
+  width: 15em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,4 +61,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .courses-card-container {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .card-container {
+    margin: 1em;
+  }
 }

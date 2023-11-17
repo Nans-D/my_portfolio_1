@@ -4,8 +4,20 @@ import moi from "../../images/moi.jpeg";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Contact } from "../Contact/Contact";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
 
 function Header() {
+  // const burgerLogo = document.getElementById("burger-logo");
+  // const burgerNav = useRef(null);
+
+  // burgerLogo.addEventListener("click", () => {
+  //   if (burgerNav.current.style.display === "flex") {
+  //     burgerNav.current.style.display = "none";
+  //   } else {
+  //     burgerNav.current.style.display = "flex";
+  //   }
+  // });
+
   return (
     <Router>
       <div>
@@ -16,6 +28,30 @@ function Header() {
               <a id="closeBtn" href="#/" class="close">
                 ×
               </a>
+
+              <button id="burger-logo" className="burger-logo">
+                <FontAwesomeIcon icon={faBars} />
+              </button>
+              <div className="burger-links">
+                <ul
+                  // ref={burgerNav}
+                  id="burger-navigation-ul"
+                  className="burger-navigation-ul"
+                >
+                  <li>
+                    <a href="#/">Skills</a>
+                  </li>
+                  <li>
+                    <a href="#/">Projects</a>
+                  </li>
+                  <li>
+                    <a href="#/">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#/">Experience</a>
+                  </li>
+                </ul>
+              </div>
               <ul className="navigation-ul">
                 <li>
                   <a href="#/">Skills</a>

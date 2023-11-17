@@ -92,7 +92,7 @@
   width: 100%;
   margin: 30px;
   border: 5px solid #207e73;
-  /* box-shadow: 0px 0px 50px 10px #adf0dd; */
+  box-shadow: 0px 0px 20px 2px #adf0dd;
 }
 
 .popup {
@@ -180,10 +180,16 @@
     height: 48rem;
     justify-content: center;
     color: white;
+    width: 80%;
   }
 
-  .presentation-container-text h4 {
-    font-size: 1em;
+  .my-name-container {
+    font-size: 4em;
+  }
+
+  .hi-container {
+    font-size: 1.5em;
+    animation-duration: 0.25s;
   }
 
   #logo-imgg {
@@ -193,6 +199,8 @@
   .a-container {
     display: flex;
     flex-direction: column;
-    margin: 0 7em;
+    justify-content: center;
+    align-self: center;
+    width: 12em;
   }
 }
