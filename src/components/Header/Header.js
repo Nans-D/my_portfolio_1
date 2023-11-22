@@ -9,11 +9,16 @@ function Header() {
   const navigate = useNavigate();
 
   const handleAnchorClick = (anchor) => {
-    if (window.location.pathname === "/") {
-      const anchorElement = document.getElementById(anchor);
-      if (anchorElement) {
-        anchorElement.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+    const anchorElement = document.getElementById(anchor);
+    if (anchorElement) {
+      // Faire défiler jusqu'à l'élément
+      anchorElement.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      // Ajouter un décalage après un court délai
+      const offset = -200; // ajustez selon vos besoins
+      setTimeout(() => {
+        window.scrollBy({ top: offset });
+      }, 0); // Le délai peut nécessiter un ajustement
     } else {
       navigate("/", { state: { anchor: anchor } });
     }

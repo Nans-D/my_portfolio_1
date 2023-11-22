@@ -1,6 +1,5 @@
 .container-child {
   display: flex;
-  padding: 30px 0;
   align-items: center;
   width: 72rem;
 }
