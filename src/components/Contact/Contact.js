@@ -1,7 +1,12 @@
-import './Contact.css'
+import "./Contact.css";
 
 export const Contact = () => {
-    return <div>
-        <h1>Contact</h1>
+  return (
+    <div className="contact-container">
+      <form action="/" method="post">
+        <input type="text" placeholder="Your name" />
+        <textarea cols="100" rows="20" placeholder="Your text"></textarea>
+      </form>
     </div>
-}
+  );
+};

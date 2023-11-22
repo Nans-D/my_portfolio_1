@@ -1,0 +1,17 @@
+.contact-container > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%; /* Cela garantira que l'input et le textarea aient la même largeur */
+  max-width: 600px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+  margin-bottom: 15px; /* Espacement entre les éléments du formulaire */
+}
+
+.contact-container textarea {
+  resize: vertical; /* Permet à l'utilisateur de redimensionner le textarea verticalement */
+}
