@@ -1,6 +1,6 @@
 import "./Contact.css";
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <div className="contact-container">
       <form action="/" method="post">
@@ -10,3 +10,5 @@ export const Contact = () => {
     </div>
   );
 };
+
+export default Contact;

@@ -5,7 +5,7 @@ import { faJs } from "@fortawesome/free-brands-svg-icons";
 import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 
-export const Courses = () => {
+const Courses = () => {
   return (
     <div className="courses-container">
       <div className="courses-title">Courses</div>
@@ -72,3 +72,5 @@ export const Courses = () => {
     </div>
   );
 };
+
+export default Courses;
