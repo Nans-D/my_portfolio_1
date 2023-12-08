@@ -1,5 +1,15 @@
 import "./Minigames.css";
 
-export const MiniGames = () => {
-  return <div></div>;
+const MiniGames = () => {
+  return (
+    <div>
+      <div className="game">
+        <div className="play-grid">
+          <div>why</div>
+        </div>
+      </div>
+    </div>
+  );
 };
+
+export default MiniGames;

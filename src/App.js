@@ -5,11 +5,12 @@ import Presentation from "./components/Presentation/Presentation";
 import Skill from "./components/Skills/Skill";
 import Projects from "./components/Projects-folder/Projects";
 import Contact from "./components/Contact/Contact";
-import Experience from "./components/Experience/Experience";
+// import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
 import Courses from "./components/Courses/Courses";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MiniGames from "./components/Minigames/Minigames";
 
 function App() {
   return (
@@ -34,14 +35,17 @@ function App() {
                     <div id="projects">
                       <Projects />
                     </div>
-                    <div id="experiences">
+                    {/* <div id="experiences">
                       <Experience />
+                    </div> */}
+                    <div id="courses">
+                      <Courses />
                     </div>
-                    <Courses />
                   </>
                 }
               />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/minigames" element={<MiniGames />} />
             </Routes>
           </div>
           <Footer />

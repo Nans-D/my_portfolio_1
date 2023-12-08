@@ -1,0 +1,5 @@
+.play-grid {
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  background-color: red;
+}

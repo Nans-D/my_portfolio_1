@@ -1,11 +1,28 @@
+import { useState } from "react";
 import "./Projects.css";
 
 function Projects() {
+  const [backCard, setBackCard] = useState(false);
+
   return (
     <div>
       <div className="projects-container">
         <h1 id="project-title">Projects</h1>
-        <div class="load-wrapp">
+
+        <div className="projects-cards-container">
+          <div
+            onMouseEnter={() => {
+              setBackCard(true);
+            }}
+            onMouseLeave={() => {
+              setBackCard(false);
+            }}
+            className="projects-card"
+          >
+            <img src="" alt="" />
+          </div>
+        </div>
+        {/* <div class="load-wrapp">
           <div class="load-6">
             <div class="letter-holder">
               <div class="l-1 letter">L</div>
@@ -20,7 +37,7 @@ function Projects() {
               <div class="l-10 letter">.</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

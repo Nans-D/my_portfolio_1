@@ -52,15 +52,26 @@ function Header() {
               </a>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <a href="#courses" onClick={() => handleAnchorClick("courses")}>
+                Courses
+              </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#experiences"
                 onClick={() => handleAnchorClick("experiences")}
               >
                 Experience
               </a>
+            </li> */}
+            <li>
+              {/* <Link to="/contact">Contact</Link> */}
+              <a href="/contact" onClick={() => handleAnchorClick("contact")}>
+                Contact
+              </a>
+            </li>
+            <li>
+              <Link to="/minigames">Minigames</Link>
             </li>
           </ul>
         </nav>
