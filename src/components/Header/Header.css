@@ -26,17 +26,36 @@
 
 .navigation {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   font-size: 20px;
 }
 
-.navigation-ul {
+.links {
   display: flex;
   gap: 40px;
-  list-style-type: decimal;
+  list-style-type: none;
   color: white;
   align-items: center;
+}
+
+.links-header {
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+.links-header::after {
+  content: "";
+  display: flex;
+  width: 0; /* Hide border initially */
+  height: 1px;
+  background: white;
+  transition: width 0.3s ease;
+}
+.links-header:hover::after {
+  width: 100%; /* Show border on hover */
 }
 
 a {

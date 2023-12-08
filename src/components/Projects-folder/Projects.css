@@ -16,6 +16,69 @@
   -webkit-text-fill-color: transparent;
 }
 
+.projects-card {
+  text-align: center;
+  color: white;
+  border: 2px solid #145750;
+  padding: 1em 2em;
+  margin: 0 1em;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #0d2d2a, #0d1514);
+  width: 15em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.projects-card-backCard {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projects-card-backCard-title-container {
+  display: inline-flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.projects-card-backCard-title {
+  background: linear-gradient(90deg, #0d2d2a, #0d1514);
+  padding: 1em 2em;
+  border-radius: 10px;
+  border: 5px solid #145750;
+  color: white;
+}
+
+.projects-card-title {
+  font-weight: bold;
+  padding: 0 0 1em 0;
+  font-size: 20px;
+}
+
+.languages-projects-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  padding: 1em 0 0 0;
+}
+
+.language-projects-container {
+  font-size: 8px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: #12a594;
+  padding: 5px 10px;
+  align-self: flex-start;
+  border-radius: 5px;
+}
+
 .load-wrapp {
   display: flex;
   justify-content: center;

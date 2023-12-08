@@ -40,19 +40,31 @@ function Header() {
             <FontAwesomeIcon icon={faBars} />
           </button>
           <div className="burger-links"></div>
-          <ul className="navigation-ul">
+          <ul className="links">
             <li>
-              <a href="#skill" onClick={() => handleAnchorClick("skill")}>
+              <a
+                className="links-header"
+                href="#skill"
+                onClick={() => handleAnchorClick("skill")}
+              >
                 Skills
               </a>
             </li>
             <li>
-              <a href="#projects" onClick={() => handleAnchorClick("projects")}>
+              <a
+                className="links-header"
+                href="#projects"
+                onClick={() => handleAnchorClick("projects")}
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href="#courses" onClick={() => handleAnchorClick("courses")}>
+              <a
+                className="links-header"
+                href="#courses"
+                onClick={() => handleAnchorClick("courses")}
+              >
                 Courses
               </a>
             </li>
@@ -66,7 +78,11 @@ function Header() {
             </li> */}
             <li>
               {/* <Link to="/contact">Contact</Link> */}
-              <a href="/contact" onClick={() => handleAnchorClick("contact")}>
+              <a
+                className="links-header"
+                href="/contact"
+                onClick={() => handleAnchorClick("contact")}
+              >
                 Contact
               </a>
             </li>
